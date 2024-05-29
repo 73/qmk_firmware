@@ -6,11 +6,11 @@
 
 Make example for this keyboard (after setting up your build environment):
 
-    make ymdk/sp64:default
+    qmk compile -kb ymdk/sp64 -km default
 
 Flashing example for this keyboard:
 
-    make ymdk/sp64:default:flash
+    sudo bootloadHID -r .build/ymdk_sp64_default.hex
 
 **Reset Key**: Hold down the key located at top left on the left hand board, commonly programmed as _ESC_ while plugging in the keyboard.  (NOTE:  If this doesn't work, try the lower left key on the lower left board, commonly programmed as _Control_.  There might be a different version of the board that uses that key as the reset.)
 
